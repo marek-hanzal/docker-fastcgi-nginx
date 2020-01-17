@@ -16,6 +16,6 @@ server {
         include         fastcgi_params;
         fastcgi_index   index.php;
         fastcgi_param   SCRIPT_FILENAME  /var/www/index.php;
-        fastcgi_pass    fastcgi:9000;
+        fastcgi_pass    ${FASTCGI}:9000;
     }
 }
